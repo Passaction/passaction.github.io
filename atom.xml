@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://yoursite.com/"/>
-  <updated>2017-05-09T13:11:37.000Z</updated>
-  <id>https://yoursite.com/</id>
+  <link href="https://passaction.github.io/"/>
+  <updated>2017-05-25T06:45:41.000Z</updated>
+  <id>https://passaction.github.io/</id>
   
   <author>
     <name>Passaction</name>
@@ -16,22 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://yoursite.com/2017/05/09/iOS-Tips/"/>
-    <id>https://yoursite.com/2017/05/09/iOS-Tips/</id>
-    <published>2017-05-08T16:00:00.000Z</published>
-    <updated>2017-05-09T13:11:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">1</span>...<span class="number">1000</span> &#123;</div><div class="line">    <span class="built_in">print</span>(i)</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    <title>Third Party Library</title>
+    <link href="https://passaction.github.io/2017/05/25/third-praty-library/"/>
+    <id>https://passaction.github.io/2017/05/25/third-praty-library/</id>
+    <published>2017-05-24T16:00:00.000Z</published>
+    <updated>2017-05-25T06:45:41.000Z</updated>
     
     <summary type="html">
-    
-      &lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
     
     </summary>
     
     
-      <category term="iOS" scheme="https://yoursite.com/tags/iOS/"/>
+      <category term="iOS" scheme="https://passaction.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS Tips</title>
+    <link href="https://passaction.github.io/2017/05/09/iOS-Tips/"/>
+    <id>https://passaction.github.io/2017/05/09/iOS-Tips/</id>
+    <published>2017-05-08T16:00:00.000Z</published>
+    <updated>2017-05-09T13:58:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-交换button中标题和图片的位置"><a href="#1-交换button中标题和图片的位置" class="headerlink" title="1. 交换button中标题和图片的位置"></a>1. 交换button中标题和图片的位置</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">_moreAskButton.transform = <span class="built_in">CGAffineTransformMakeScale</span>(<span class="number">-1.0</span>, <span class="number">1.0</span>);</div><div class="line">_moreAskButton.titleLabel.transform = <span class="built_in">CGAffineTransformMakeScale</span>(<span class="number">-1.0</span>, <span class="number">1.0</span>);</div><div class="line">_moreAskButton.imageView.transform = <span class="built_in">CGAffineTransformMakeScale</span>(<span class="number">-1.0</span>, <span class="number">1.0</span>)</div></pre></td></tr></table></figure>
+<h2 id="2-label-设置行间距"><a href="#2-label-设置行间距" class="headerlink" title="2. label 设置行间距"></a>2. label 设置行间距</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSMutableParagraphStyle</span> *paragraphStyle = [[<span class="built_in">NSMutableParagraphStyle</span> alloc] init];</div><div class="line">paragraphStyle.lineSpacing = <span class="number">8</span>;</div><div class="line"><span class="built_in">NSAttributedString</span> *attributedString = [[<span class="built_in">NSAttributedString</span> alloc]</div><div class="line"> initWithString:broadcast.content </div><div class="line"> attributes:@&#123;<span class="built_in">NSFontAttributeName</span>: [<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">16</span>], </div><div class="line">		<span class="built_in">NSForegroundColorAttributeName</span>: [<span class="built_in">UIColor</span> shanbayFontColorSummary], </div><div class="line">		<span class="built_in">NSParagraphStyleAttributeName</span>: paragraphStyle</div><div class="line"> &#125;];</div><div class="line"></div><div class="line">[<span class="keyword">self</span>.messageLabel setAttributedText:attributedString];</div></pre></td></tr></table></figure>
+<h2 id="3-格式化时间日期格式"><a href="#3-格式化时间日期格式" class="headerlink" title="3. 格式化时间日期格式"></a>3. 格式化时间日期格式</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line">*  date string format to "xx小时前／xx天前等"</div><div class="line">*</div><div class="line">*/</div><div class="line">- (<span class="built_in">NSString</span> *)timesAgoDescription &#123;</div><div class="line">    <span class="built_in">NSTimeInterval</span> timeInterval = [<span class="keyword">self</span> timeIntervalSinceNow];</div><div class="line">    </div><div class="line">    timeInterval = -timeInterval;</div><div class="line">    <span class="keyword">long</span> temp = <span class="number">0</span>;</div><div class="line">    <span class="built_in">NSString</span> *result;</div><div class="line">    <span class="keyword">if</span> (timeInterval &lt; <span class="number">60</span>) &#123;</div><div class="line">        result = <span class="string">@"刚刚"</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> <span class="keyword">if</span>((temp = timeInterval/<span class="number">60</span>) &lt;<span class="number">60</span>)&#123;</div><div class="line">        result = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%li%@"</span>,temp,<span class="string">@"分钟前"</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> <span class="keyword">if</span>((temp = temp/<span class="number">60</span>) &lt;<span class="number">24</span>)&#123;</div><div class="line">        result = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%li%@"</span>,temp,<span class="string">@"小时前"</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> <span class="keyword">if</span>((temp = temp/<span class="number">24</span>) &lt;<span class="number">30</span>)&#123;</div><div class="line">        result = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%li%@"</span>,temp,<span class="string">@"天前"</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> <span class="keyword">if</span>((temp = temp/<span class="number">30</span>) &lt;<span class="number">12</span>)&#123;</div><div class="line">        result = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%li%@"</span>,temp,<span class="string">@"月前"</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        temp = temp/<span class="number">12</span>;</div><div class="line">        result = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%li%@"</span>,temp,<span class="string">@"年前"</span>];</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">return</span>  result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="4-判断iOS设备是否越狱"><a href="#4-判断iOS设备是否越狱" class="headerlink" title="4. 判断iOS设备是否越狱"></a>4. 判断iOS设备是否越狱</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">BOOL</span>)jailbrokenDevice&#123; </div><div class="line">    <span class="built_in">BOOL</span> jailbroken = <span class="literal">NO</span>; </div><div class="line">    <span class="built_in">NSString</span> * cydiaPath = <span class="string">@"/Applications/Cydia.app"</span>;    </div><div class="line">    <span class="built_in">NSString</span> * aptPath = <span class="string">@"/private/var/lib/apt"</span>;    </div><div class="line">    <span class="keyword">if</span> ([[<span class="built_in">NSFileManager</span> defaultManager] fileExistsAtPath:cydiaPath]) &#123;        </div><div class="line">        jailbroken = <span class="literal">YES</span>;    </div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">if</span> ([[<span class="built_in">NSFileManager</span> defaultManager] fileExistsAtPath:aptPath]) &#123;        </div><div class="line">        jailbroken = <span class="literal">YES</span>;    </div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> jailbroken;</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-交换button中标题和图片的位置&quot;&gt;&lt;a href=&quot;#1-交换button中标题和图片的位置&quot; class=&quot;headerlink&quot; title=&quot;1. 交换button中标题和图片的位置&quot;&gt;&lt;/a&gt;1. 交换button中标题和图片的位置&lt;/h2&gt;&lt;fi
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://passaction.github.io/tags/iOS/"/>
     
   </entry>
   
