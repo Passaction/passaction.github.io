@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Passaction</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yoursite.com/"/>
+  <updated>2017-05-09T13:11:37.000Z</updated>
+  <id>https://yoursite.com/</id>
+  
+  <author>
+    <name>Passaction</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://yoursite.com/2017/05/09/iOS-Tips/"/>
+    <id>https://yoursite.com/2017/05/09/iOS-Tips/</id>
+    <published>2017-05-08T16:00:00.000Z</published>
+    <updated>2017-05-09T13:11:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">1</span>...<span class="number">1000</span> &#123;</div><div class="line">    <span class="built_in">print</span>(i)</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+    
+      <category term="iOS" scheme="https://yoursite.com/tags/iOS/"/>
+    
+  </entry>
+  
+</feed>
